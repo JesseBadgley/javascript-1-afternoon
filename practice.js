@@ -8,7 +8,7 @@ var myName = "Jesse";
 
 //Create a variable called myAge that is a number data type
 
-var myAge = 36;
+myAge = 36;
 
 //////////////////PROBLEM 3////////////////////
 
@@ -92,16 +92,17 @@ var devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck(nameParam) {
-  if (nameParam = "steven") {
-    return 'what is up Steven?'
-  } else if (nameParam = "bryan") {
-      return 'Hey Bryan'
+  if (nameParam === "Steven") {
+    return 'What is up Steven?'
+  } else if (nameParam === "Bryan") {
+      return 'Hey Bryan!'
     } else {
       return "Cool name, " + nameParam
     }
   
 }
 
+console.log(nameCheck)
 
 
 
@@ -111,15 +112,15 @@ function nameCheck(nameParam) {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-function add(number1, number2) {
-return number1 + number2
+function add(num1, num2) {
+return num1 + num2
 }
 add(3,4)
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-var mathsum = add(3,4);
+var mathSum = add(3,4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -130,7 +131,17 @@ var mathsum = add(3,4);
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color){
+if (color === 'red') {
+return "red is a great color"
+} if (color === 'green') {
+  return 'green is a solid favorite color'
+} if (color === 'black') {
+  return 'so trendy'
+} else {return 'you need to evaluate your favorite color choice'}
+
+}
+faveColorFinder('black')
 
 //////////////////PROBLEM 13////////////////////
 
@@ -179,4 +190,4 @@ var age = age ++;
 
 // Good news! We can live forever. Set your age to 999
 
-var age = age + 962;
+var age = 999;
